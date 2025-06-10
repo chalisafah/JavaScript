@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input name</title>
+</head>
+<body>
+    <h2>My test in Name</h2>
+    
+    <input type="text" id="name" placeholder="Name">
+
+    <button onclick="InputName()">Click</button>
+    
+    <div id="OutputName" style="margin-top:20px; font-weight:bold;"></div> 
+    
+    <script>
+       function InputName(){
+        let name = document.getElementById("name").value;
+
+        if(name.length < 3){
+            document.getElementById("OutputName").innerText = "ชื่อของคุณสั้นเกินไป กรุณากรอกใหม่";
+
+        }else document.getElementById("OutputName").innerText = "Hello, " + name;
+       }
+
+       
+    </script>
+
+</body>
+</html>

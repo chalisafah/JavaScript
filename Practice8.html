@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หาค่ามากที่สุดใน Array</title>
+</head>
+<body>
+    <h2>Cal for Maximum Number in Array</h2>
+    <button onclick="NumMax()">Click for cal</button>
+    <button onclick="clearCal()">Clear</button>
+    <div id="result" style="margin-top: auto;"></div>
+
+    <script>
+        let arr = [];
+        //รับค่า
+        for(let i = 0; i<5; i++){
+            let input = Number(prompt("Enter num: "));
+            //เก็บค่าใน array
+            arr.push(input);
+        }
+
+        function NumMax(){
+            let max = Math.max(...arr);
+            
+            document.getElementById("result").innerText = 
+            "Array = " + arr.join(", ") + "\n" + 
+            "Maximum = " + max;  
+        }
+
+        function clearCal(){
+            document.getElementById("result").innerText = "";
+            
+        }
+        
+
+        
+
+    </script>
+</body>
+</html>

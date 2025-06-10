@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input name</title>
+</head>
+<body>
+    <h2>My test in Name</h2>
+    
+    <input type="number" id="num" placeholder="Enter Number">
+
+    <button onclick="ClickToCheck()">Click to Check</button>
+
+    <div id="result" style="margin-top: auto; font-weight: bold"></div> 
+
+    <script>
+       function ClickToCheck(){
+        let num = document.getElementById("num").value;
+
+        if(num > 0){
+            document.getElementById("result").innerText = "เลขที่กรอกเป็นจำนวนเต็มบวก";
+        }
+        else if(num < 0){
+            document.getElementById("result").innerText = "เลขที่กรอกเป็นจำนวนเต็มลบ";        
+        }
+        else{
+            document.getElementById("result").innerText = "เลขที่กรอกกเป็นศูนย์";
+        }
+
+       }
+
+
+    </script>
+
+</body>
+</html>

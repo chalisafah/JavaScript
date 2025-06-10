@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หาค่ามากที่สุดใน Array</title>
+</head>
+<body>
+    
+    <div id="output"></div>
+
+    <script>
+        let arrA = [];
+        let sum = 0;
+    
+        for(let i=0;i<5;i++){
+            arrA.push(Number(prompt("Enter number: ")));
+        }
+
+        for(let i=0;i<5;i++){
+            sum += arrA[i];
+        }
+
+        let avg = sum/5;
+
+        document.getElementById("output").innerText = "Array = " + arrA.join(", ") + "\nAverage " + sum + " = " + avg;
+
+    </script>
+</body>
+</html>

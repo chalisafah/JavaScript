@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show summary in div</title>
+</head>
+<body>
+
+    <div id="result"></div>
+
+    <script>
+        let num = [10,20,30,40,50];
+        let sum = 0;
+
+        for(let i=0;i<num.length;i++){
+            sum += num[i];
+        }
+
+        //แสดงใน console (F12ในเว็บ)
+        console.log("Result = " + sum);
+        //แสดงหน้าเว็บ
+        document.getElementById("result").innerText = "Result = " + sum;
+    </script>
+</body>
+</html>

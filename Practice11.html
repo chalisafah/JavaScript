@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input name</title>
+</head>
+<body>
+    
+    <h2>Name</h2>
+    <input type="text" id="name" placeholder="Enter Your name">
+
+    <button onclick="HelloUser()">Press to Say Hello</button> 
+
+    <div id="name1" style="margin-top: 20px; font-weight: bold;"></div>
+    
+    <script>
+       function HelloUser(){
+        let name = document.getElementById("name").value;
+
+        document.getElementById("name1").innerText = 
+            "Hello, " + name;
+       }
+
+       
+    </script>
+
+</body>
+</html>

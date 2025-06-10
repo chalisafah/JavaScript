@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show summary in div</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        let num = prompt("Enter you number: ");
+        num = Number(num);
+
+        if(num%2 === 0){
+            document.getElementById("output").innerText = "เลข " + num + "เป็นเลขคู่";
+        }
+        else{
+            document.getElementById("output").innerText = "เลข " + num + " เป็นเลขคี่";
+        }
+
+    </script>
+</body>
+</html>
